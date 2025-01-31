@@ -1,7 +1,7 @@
 package com.victorhgbb.siscoleta.mapper;
 
-import com.victorhgbb.siscoleta.dto.PdvDTO;
-import com.victorhgbb.siscoleta.entity.PdvEntity;
+import com.victorhgbb.siscoleta.dto.PdcDTO;
+import com.victorhgbb.siscoleta.entity.PdcEntity;
 import org.mapstruct.Mapper;
 
 import java.util.List;
@@ -9,9 +9,9 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface PdvMapper {
 
-    PdvDTO toDto(PdvEntity pdv);
+    PdcDTO toDto(PdcEntity pdv);
 
-    PdvEntity toEntity(PdvDTO pdv);
+    PdcEntity toEntity(PdcDTO pdv);
 
-    List<PdvDTO> toListDto(List<PdvEntity> pdv);
+    List<PdcDTO> toListDto(List<PdcEntity> pdv);
 }

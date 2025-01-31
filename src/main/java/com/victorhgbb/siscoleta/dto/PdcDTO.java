@@ -9,7 +9,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class PdvDTO {
+public class PdcDTO {
 
     private String name;
 

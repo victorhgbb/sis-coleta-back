@@ -1,4 +1,4 @@
-CREATE TABLE pdv (
+CREATE TABLE pdc (
     id BIGSERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     "address" VARCHAR(100) NOT NULL,

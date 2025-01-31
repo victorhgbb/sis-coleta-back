@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "PDV")
+@Table(name = "PDC")
 @AttributeOverrides({
         @AttributeOverride(name = "dateCreate", column = @Column(name = "DATE_CREATE", columnDefinition = "Timestamp")),
         @AttributeOverride(name = "createUser", column = @Column(name = "CREATE_USER")),
@@ -16,7 +16,7 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class PdvEntity extends BaseLogEntity {
+public class PdcEntity extends BaseLogEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
