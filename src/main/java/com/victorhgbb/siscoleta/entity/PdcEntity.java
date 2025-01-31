@@ -30,10 +30,10 @@ public class PdcEntity extends BaseLogEntity {
     private String address;
 
     @Column(name = "LATITUDE", nullable = false)
-    private String latitude;
+    private Float latitude;
 
     @Column(name = "LONGITUDE", nullable = false)
-    private String longitude;
+    private Float longitude;
 
     @Column(name = "TYPE", nullable = false)
     private String type;

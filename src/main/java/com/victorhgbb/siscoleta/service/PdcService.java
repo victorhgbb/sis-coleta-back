@@ -26,9 +26,9 @@ public class PdcService {
         this.pdcRepository.save(pdv);
     }
 
-    public List<PdcDTO> getPdv(){
-        List<PdcEntity> pdvList = this.pdcRepository.findAll();
-        return pdvMapper.toListDto(pdvList);
+    public List<PdcDTO> getPdc(){
+        List<PdcEntity> pdcList = this.pdcRepository.findAll();
+        return pdvMapper.toListDto(pdcList);
     }
 
     public void delete(Integer id){

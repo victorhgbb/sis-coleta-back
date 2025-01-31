@@ -1,23 +1,23 @@
 package com.victorhgbb.siscoleta.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
+@Builder
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class PdcDTO {
 
     private String name;
 
     private String address;
 
-    private String latitude;
+    private Float latitude;
 
-    private String longitude;
+    private Float longitude;
 
     private String type;
 

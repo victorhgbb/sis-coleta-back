@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/pdv")
+@RequestMapping("/api/v1/pdc")
 public class PdcController {
 
     private final PdcService pdcService;
@@ -26,10 +26,10 @@ public class PdcController {
     }
 
     @GetMapping
-    public ResponseEntity<List<PdcDTO>> getPdv(@RequestParam(required = false) String nome,
+    public ResponseEntity<List<PdcDTO>> getPdc(@RequestParam(required = false) String nome,
                                                @RequestParam(required = false) Integer idade,
                                                @RequestParam(required = false) Integer cpf){
-        List<PdcDTO> pdvList = this.pdcService.getPdv();
+        List<PdcDTO> pdvList = this.pdcService.getPdc();
         return ResponseEntity.ok(pdvList);
     }
 
